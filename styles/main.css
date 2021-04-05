@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ 
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ 
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Manrope', sans-serif;
+}
+ 
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+ 
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+ 
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ 
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =========================Styles============================= */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #6B8FD4;
+  font-size: 18px;
+}
+
+.full-container {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.date {
+  width: 25%;
+  padding: 40px 80px;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 60px;
+  opacity: .6;
+}
+
+.year {
+  font-size: 33px;
+  opacity: .6;
+  margin-top: -20px;
+  margin-left: 5px;
+}
+
+.container {
+  width: 40%;
+  /* margin: 0 auto; */
+  text-align: center;
+  margin-top: 50px;
+  background-color: #FFCF73;
+  padding: 40px 0 60px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 35px -5px;
+}
+
+.message {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.add {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.add:active {
+  background: rgba(0,0,0,.1);
+}
+
+.important {
+  font-weight: bold;
+  color: red;
+}
+
+.done {
+  font-weight: bold;
+  color: green;
+}
+
+li {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 30px 0px;
+}
+
+li:first-child {
+  margin-top: 50px;
+}
+
+li:not(:last-child) {
+  border-bottom: 3px solid #6B8FD4;
+}
+
+input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.authority {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+/* input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+} */
